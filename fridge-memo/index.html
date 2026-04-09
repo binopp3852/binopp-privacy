@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보처리방침 | 메모하는 냉장고</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0A0F1A;
+            color: #D8E4F0;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        .lang-toggle {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 32px;
+        }
+
+        .lang-btn {
+            padding: 6px 16px;
+            border: 1px solid #1565C0;
+            background: transparent;
+            color: #D8E4F0;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .lang-btn.active {
+            background: #1565C0;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: #42A5F5;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: #6A8AA8;
+            margin-bottom: 8px;
+        }
+
+        .updated {
+            font-size: 12px;
+            color: #3A5068;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #42A5F5;
+            margin: 36px 0 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #152030;
+        }
+
+        p {
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: #B0C8E0;
+        }
+
+        ul {
+            margin: 8px 0 12px 20px;
+        }
+
+        li {
+            font-size: 14px;
+            color: #B0C8E0;
+            margin-bottom: 4px;
+        }
+
+        a {
+            color: #42A5F5;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 13px;
+        }
+
+        th, td {
+            border: 1px solid #1A2A40;
+            padding: 10px 14px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #0D1A2A;
+            font-weight: 600;
+            color: #90CAF9;
+        }
+
+        td {
+            color: #B0C8E0;
+        }
+
+        .contact {
+            background: #0D1A2A;
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin-top: 8px;
+        }
+
+        .contact p {
+            margin: 0;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-toggle">
+            <button class="lang-btn active" onclick="showLang('ko')">한국어</button>
+            <button class="lang-btn" onclick="showLang('en')">English</button>
+        </div>
+
+        <div id="ko">
+            <h1>메모하는 냉장고</h1>
+            <div class="subtitle">메모하는 냉장고 개인정보처리방침</div>
+            <div class="updated">최종 수정일: 2026년 4월 9일</div>
+
+            <p>binopp(이하 "개발자")은 「메모하는 냉장고」(이하 "앱")을 운영함에 있어
+            이용자의 개인정보를 중요하게 생각하며, 아래와 같이 개인정보처리방침을 수립합니다.</p>
+
+            <h2>1. 수집하는 개인정보 항목</h2>
+
+            <p><strong>가. Google 로그인 시 수집 항목</strong></p>
+            <table>
+                <tr><th>항목</th><th>수집 목적</th><th>보관 기간</th></tr>
+                <tr><td>Google 계정 ID (sub)</td><td>회원 식별, 데이터 동기화</td><td>회원 탈퇴 시 즉시 삭제</td></tr>
+                <tr><td>이름</td><td>프로필 표시</td><td>회원 탈퇴 시 즉시 삭제</td></tr>
+                <tr><td>이메일 주소</td><td>계정 관리, 고객 지원</td><td>회원 탈퇴 시 즉시 삭제</td></tr>
+            </table>
+
+            <p><strong>나. 앱 사용 중 생성 데이터</strong></p>
+            <table>
+                <tr><th>항목</th><th>내용</th><th>저장 위치</th></tr>
+                <tr><td>메모 내용</td><td>사용자가 직접 입력한 할 일 텍스트</td><td>기기 로컬 + 서버(로그인 시)</td></tr>
+                <tr><td>메모 위치·색상·각도</td><td>포스트잇 배치 정보</td><td>기기 로컬 + 서버(로그인 시)</td></tr>
+                <tr><td>냉장고 설정</td><td>선택한 스킨, 냉장고 이름</td><td>기기 로컬</td></tr>
+            </table>
+
+            <p><strong>다. 자동 수집 정보 (비로그인 포함)</strong></p>
+            <ul>
+                <li>광고 식별자 (GAID): Google AdMob 광고 게재 목적으로 Google이 수집</li>
+                <li>앱 충돌 정보: 오류 개선 목적 (향후 Firebase Crashlytics 적용 시)</li>
+            </ul>
+
+            <h2>2. 개인정보의 이용 목적</h2>
+            <ul>
+                <li>메모 데이터의 기기 간 동기화 및 백업</li>
+                <li>광고 게재 (Google AdMob 배너·전면·보상형 광고)</li>
+                <li>앱 기능 개선 및 오류 수정</li>
+                <li>이용자 문의 대응</li>
+            </ul>
+
+            <h2>3. 제3자 서비스</h2>
+
+            <p><strong>Google AdMob (광고)</strong></p>
+            <p>본 앱은 광고 제공을 위해 Google AdMob을 사용합니다. AdMob은 광고 개인화를
+            위해 다음 정보를 수집할 수 있습니다:</p>
+            <ul>
+                <li>광고 식별자 (Android: GAID)</li>
+                <li>기기 정보 (모델, OS 버전)</li>
+                <li>대략적인 위치 정보</li>
+                <li>앱 사용 데이터</li>
+            </ul>
+
+            <p><a href="https://policies.google.com/privacy">Google 개인정보처리방침</a> |
+            <a href="https://support.google.com/admob/answer/6128543">AdMob 데이터 사용 안내</a></p>
+
+            <p>이용자는 기기 설정에서 광고 맞춤설정을 거부할 수 있습니다.<br>
+            (Android: 설정 → Google → 광고 → 광고 맞춤설정 선택 해제)</p>
+
+            <p><strong>Amazon Web Services (서버)</strong></p>
+            <p>메모 동기화를 위해 AWS Lambda + DynamoDB (서울 리전)를 사용합니다.
+            서버에 저장된 데이터는 회원 탈퇴 시 삭제됩니다.</p>
+
+            <h2>4. 어린이 개인정보 보호</h2>
+            <p>본 앱은 만 14세 미만 아동을 대상으로 하지 않습니다. 만 14세 미만 아동이
+            개인정보를 제공한 경우, 보호자가 요청하면 즉시 삭제합니다.</p>
+
+            <h2>5. 데이터 보유 및 삭제</h2>
+            <ul>
+                <li><strong>로그인 사용자:</strong> 회원 탈퇴 요청 후 30일 이내 서버 데이터 완전 삭제</li>
+                <li><strong>비로그인 사용자:</strong> 앱 삭제 시 기기 내 모든 데이터 즉시 삭제</li>
+                <li><strong>광고 관련 데이터:</strong> Google의 개인정보처리방침에 따라 처리</li>
+            </ul>
+
+            <h2>6. 이용자의 권리</h2>
+            <p>이용자는 언제든지 개인정보 열람, 수정, 삭제 및 처리 정지를 요청할 수 있습니다.
+            아래 연락처로 요청하시면 10일 이내 처리합니다.</p>
+
+            <h2>7. 개인정보처리방침 변경</h2>
+            <p>본 방침은 관련 법령 또는 서비스 변경에 따라 개정될 수 있으며, 변경 시 앱 내 또는
+            스토어 페이지를 통해 사전 공지합니다.</p>
+
+            <h2>8. 문의처</h2>
+            <div class="contact">
+                <p>개발자: binopp</p>
+                <p>이메일: <a href="mailto:binopp3852@gmail.com">binopp3852@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div id="en" class="hidden">
+            <h1>Fridge Memo</h1>
+            <div class="subtitle">메모하는 냉장고 — Privacy Policy</div>
+            <div class="updated">Last updated: April 9, 2026</div>
+
+            <p>binopp ("Developer") operates 메모하는 냉장고 ("Fridge Memo", "App") and is committed to
+            protecting your privacy. This policy explains how we handle information.</p>
+
+            <h2>1. Information We Collect</h2>
+
+            <p><strong>a. Google Sign-In</strong></p>
+            <table>
+                <tr><th>Item</th><th>Purpose</th><th>Retention</th></tr>
+                <tr><td>Google Account ID (sub)</td><td>User identification, data sync</td><td>Deleted upon account deletion</td></tr>
+                <tr><td>Name</td><td>Profile display</td><td>Deleted upon account deletion</td></tr>
+                <tr><td>Email address</td><td>Account management, support</td><td>Deleted upon account deletion</td></tr>
+            </table>
+
+            <p><strong>b. App Usage Data</strong></p>
+            <table>
+                <tr><th>Item</th><th>Details</th><th>Storage</th></tr>
+                <tr><td>Memo content</td><td>To-do text entered by user</td><td>Local + server (when signed in)</td></tr>
+                <tr><td>Memo position, color, angle</td><td>Sticky note layout info</td><td>Local + server (when signed in)</td></tr>
+                <tr><td>Fridge settings</td><td>Selected skin, fridge name</td><td>Local only</td></tr>
+            </table>
+
+            <p><strong>c. Automatically Collected (including non-signed-in users)</strong></p>
+            <ul>
+                <li>Advertising ID (GAID): Collected by Google for AdMob ad serving</li>
+                <li>Crash data: For bug fixes (when Firebase Crashlytics is enabled)</li>
+            </ul>
+
+            <h2>2. Purpose of Data Use</h2>
+            <ul>
+                <li>Sync memo data across devices</li>
+                <li>Display ads via Google AdMob (banner, interstitial, rewarded)</li>
+                <li>Improve app functionality and fix errors</li>
+                <li>Respond to user inquiries</li>
+            </ul>
+
+            <h2>3. Third-Party Services</h2>
+
+            <p><strong>Google AdMob (Advertising)</strong></p>
+            <p>This app uses Google AdMob to display advertisements. AdMob may collect the
+            following for ad personalization:</p>
+            <ul>
+                <li>Advertising identifier (Android: GAID)</li>
+                <li>Device information (model, OS version)</li>
+                <li>Approximate location</li>
+                <li>App usage data</li>
+            </ul>
+
+            <p><a href="https://policies.google.com/privacy">Google Privacy Policy</a> |
+            <a href="https://support.google.com/admob/answer/6128543">AdMob Data Usage</a></p>
+
+            <p>You may opt out of personalized ads in your device settings.<br>
+            (Android: Settings → Google → Ads → Opt out of Ads Personalization)</p>
+
+            <p><strong>Amazon Web Services (Server)</strong></p>
+            <p>AWS Lambda + DynamoDB (Seoul region) are used for memo sync.
+            Server data is deleted upon account deletion.</p>
+
+            <h2>4. Children's Privacy</h2>
+            <p>This app is not directed at children under 13 years of age. We do not knowingly
+            collect data from children under 13.</p>
+
+            <h2>5. Data Retention & Deletion</h2>
+            <ul>
+                <li><strong>Signed-in users:</strong> Server data deleted within 30 days of account deletion request</li>
+                <li><strong>Non-signed-in users:</strong> All local data deleted immediately upon app uninstall</li>
+                <li><strong>Ad-related data:</strong> Handled per Google's privacy policy</li>
+            </ul>
+
+            <h2>6. Your Rights</h2>
+            <p>You may request access to, correction, or deletion of your personal data at any time.
+            Contact us below and we will process your request within 10 business days.</p>
+
+            <h2>7. Changes to This Policy</h2>
+            <p>This policy may be updated in accordance with applicable laws or service changes.
+            Users will be notified via the app or store listing page.</p>
+
+            <h2>8. Contact</h2>
+            <div class="contact">
+                <p>Developer: binopp</p>
+                <p>Email: <a href="mailto:binopp3852@gmail.com">binopp3852@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showLang(lang) {
+            document.getElementById('ko').classList.toggle('hidden', lang !== 'ko');
+            document.getElementById('en').classList.toggle('hidden', lang !== 'en');
+            document.querySelectorAll('.lang-btn').forEach((btn, i) => {
+                btn.classList.toggle('active', (i === 0 && lang === 'ko') || (i === 1 && lang === 'en'));
+            });
+        }
+    </script>
+</body>
+</html>
