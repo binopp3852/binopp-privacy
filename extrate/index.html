@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | 환율 변환기 - binopp</title>
+  <meta name="description" content="환율 변환기 (Exchange Rate Converter) privacy policy by binopp.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0F1115;
+      color: #F5F7FA;
+      line-height: 1.8;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    .back {
+      display: inline-block;
+      font-size: 13px;
+      color: #6B7280;
+      text-decoration: none;
+      margin-bottom: 28px;
+    }
+    .back:hover { color: #4DA3FF; }
+    .lang-toggle {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+    .lang-btn {
+      padding: 6px 16px;
+      border: 1px solid #4DA3FF;
+      background: transparent;
+      color: #F5F7FA;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .lang-btn.active { background: #4DA3FF; color: #0F1115; }
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: #4DA3FF;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      font-size: 13px;
+      color: #9AA3B2;
+      margin-bottom: 8px;
+    }
+    .updated {
+      font-size: 12px;
+      color: #6B7280;
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #4DA3FF;
+      margin: 36px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #2A2F3A;
+    }
+    p { margin-bottom: 12px; font-size: 14px; color: #C8CCD4; }
+    ul { margin: 8px 0 12px 20px; }
+    li { font-size: 14px; color: #C8CCD4; margin-bottom: 4px; }
+    a { color: #4DA3FF; }
+    .contact {
+      background: #171A21;
+      border: 1px solid #2A2F3A;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-top: 8px;
+    }
+    .contact p { margin: 0; }
+    .hidden { display: none; }
+    code {
+      background: #171A21;
+      border: 1px solid #2A2F3A;
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-size: 13px;
+      color: #4DA3FF;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <a class="back" href="https://privacy.binopp.com/">← binopp Privacy</a>
+
+  <div class="lang-toggle">
+    <button class="lang-btn active" onclick="showLang('ko')">한국어</button>
+    <button class="lang-btn" onclick="showLang('en')">English</button>
+  </div>
+
+  <!-- 한국어 -->
+  <div id="ko">
+    <h1>EXTRATE</h1>
+    <p class="subtitle">환율 변환기 개인정보처리방침</p>
+    <p class="updated">최종 수정일: 2026년 4월 26일</p>
+
+    <p>binopp(이하 "개발자")은 「환율 변환기」(이하 "앱")을 운영함에 있어 이용자의 개인정보를 중요하게 생각하며, 아래와 같이 개인정보처리방침을 수립합니다.</p>
+
+    <h2>1. 수집하는 개인정보 항목</h2>
+    <p>본 앱은 회원가입, 로그인 절차가 없으며 이용자의 개인 식별 정보를 수집·저장하지 않습니다.</p>
+    <p>앱은 다음 데이터를 <strong>기기 내부에만</strong> 저장합니다:</p>
+    <ul>
+      <li>즐겨찾기한 통화쌍 목록 (예: USD → KRW)</li>
+      <li>환율 알림 설정 (기준 통화, 대상 통화, 목표 환율, 조건)</li>
+    </ul>
+    <p>이 데이터는 기기 밖으로 전송되지 않으며, 개발자도 접근할 수 없습니다.</p>
+
+    <h2>2. 환율 데이터 조회</h2>
+    <p>실시간 환율 정보를 제공하기 위해 본 앱은 다음 외부 서비스에 환율 데이터를 요청합니다:</p>
+    <ul>
+      <li>fawazahmed0/exchange-api (오픈소스 환율 API, jsdelivr CDN으로 배포)</li>
+    </ul>
+    <p>요청 시 전송되는 정보는 <code>통화 코드</code>와 <code>날짜</code>뿐이며, 이용자를 식별할 수 있는 어떠한 정보도 포함되지 않습니다. 통상적인 HTTP 요청에 따라 IP 주소, User-Agent 등은 CDN 서버 로그에 일시적으로 기록될 수 있으며, 이는 jsdelivr 및 해당 CDN 제공자의 정책을 따릅니다.</p>
+    <p>참고: <a href="https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net" target="_blank">jsdelivr Privacy Policy</a></p>
+
+    <h2>3. 푸시 알림</h2>
+    <p>본 앱의 "환율 알림" 기능은 <strong>로컬 알림</strong>만 사용하며, 외부 푸시 서버로 데이터를 전송하지 않습니다. 알림 권한은 이용자가 직접 설정한 목표 환율 조건이 충족될 때 기기 내에서 알림을 표시하기 위해 사용됩니다.</p>
+    <p>알림 권한은 언제든지 기기 설정에서 해제할 수 있습니다.</p>
+
+    <h2>4. 제3자 서비스 — Google AdMob</h2>
+    <p>본 앱은 광고 제공을 위해 Google AdMob을 사용합니다. AdMob은 광고 개인화를 위해 다음 정보를 수집할 수 있습니다:</p>
+    <ul>
+      <li>광고 식별자 (Android: GAID)</li>
+      <li>기기 정보 (모델, OS 버전)</li>
+      <li>대략적인 위치 정보</li>
+      <li>앱 사용 데이터</li>
+    </ul>
+    <p>
+      <a href="https://policies.google.com/privacy" target="_blank">Google 개인정보처리방침</a> |
+      <a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob 데이터 사용 안내</a>
+    </p>
+    <p>이용자는 기기 설정에서 광고 맞춤설정을 거부할 수 있습니다.<br>
+    (Android: 설정 → Google → 광고 → 광고 맞춤설정 선택 해제)</p>
+
+    <h2>5. 어린이 개인정보 보호</h2>
+    <p>본 앱은 만 14세 미만 아동을 대상으로 하지 않습니다. 만 14세 미만 아동이 앱을 이용하는 경우, 보호자의 지도하에 사용하시기 바랍니다.</p>
+
+    <h2>6. 데이터 보유 및 삭제</h2>
+    <p>앱에서 저장하는 모든 데이터(즐겨찾기, 알림 설정)는 기기에서 앱을 삭제하면 즉시 함께 삭제됩니다. 개발자 서버에 별도로 저장되는 이용자 데이터는 없습니다.</p>
+
+    <h2>7. 환율 정보의 정확성</h2>
+    <p>본 앱이 제공하는 환율 정보는 참고용이며, 실제 환전·송금·거래 시 적용 환율과 다를 수 있습니다. 환율 정보의 정확성·완전성에 대해 개발자는 어떠한 보증도 하지 않으며, 이를 근거로 발생한 손실에 대해 책임지지 않습니다.</p>
+
+    <h2>8. 개인정보처리방침 변경</h2>
+    <p>본 방침은 관련 법령 또는 서비스 변경에 따라 개정될 수 있으며, 변경 시 앱 내 또는 스토어 페이지를 통해 사전 공지합니다.</p>
+
+    <h2>9. 문의처</h2>
+    <div class="contact">
+      <p>개발자: binopp<br>
+      이메일: <a href="mailto:binopp3852@gmail.com">binopp3852@gmail.com</a></p>
+    </div>
+  </div>
+
+  <!-- English -->
+  <div id="en" class="hidden">
+    <h1>EXTRATE</h1>
+    <p class="subtitle">Exchange Rate Converter Privacy Policy</p>
+    <p class="updated">Last updated: April 26, 2026</p>
+
+    <p>binopp ("Developer") operates Exchange Rate Converter ("App") and is committed to protecting your privacy. This policy explains how we handle information.</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>This app does not require account registration or login. We do not collect or store any personally identifiable information.</p>
+    <p>The app stores the following data <strong>locally on your device only</strong>:</p>
+    <ul>
+      <li>Favorite currency pairs (e.g., USD → KRW)</li>
+      <li>Rate alert settings (base currency, target currency, threshold, condition)</li>
+    </ul>
+    <p>This data never leaves your device and is inaccessible to the developer.</p>
+
+    <h2>2. Exchange Rate Data Requests</h2>
+    <p>To provide real-time exchange rate information, the app requests data from the following external service:</p>
+    <ul>
+      <li>fawazahmed0/exchange-api (open-source currency API, distributed via jsdelivr CDN)</li>
+    </ul>
+    <p>Only the <code>currency code</code> and <code>date</code> are sent in the request. No user-identifying information is included. Standard HTTP request metadata (IP address, User-Agent, etc.) may be temporarily logged by the CDN servers, subject to jsdelivr and its CDN provider's policies.</p>
+    <p>See: <a href="https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net" target="_blank">jsdelivr Privacy Policy</a></p>
+
+    <h2>3. Push Notifications</h2>
+    <p>The "Rate Alert" feature uses <strong>local notifications only</strong> and does not transmit any data to external push servers. The notification permission is used solely to display alerts on your device when your user-defined rate conditions are met.</p>
+    <p>You may revoke the notification permission at any time in your device settings.</p>
+
+    <h2>4. Third-Party Service — Google AdMob</h2>
+    <p>This app uses Google AdMob to display advertisements. AdMob may collect the following for ad personalization:</p>
+    <ul>
+      <li>Advertising identifier (Android: GAID)</li>
+      <li>Device information (model, OS version)</li>
+      <li>Approximate location</li>
+      <li>App usage data</li>
+    </ul>
+    <p>
+      <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> |
+      <a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob Data Usage</a>
+    </p>
+    <p>You may opt out of personalized ads in your device settings.<br>
+    (Android: Settings → Google → Ads → Opt out of Ads Personalization)</p>
+
+    <h2>5. Children's Privacy</h2>
+    <p>This app is not directed at children under 14 years of age. If a child under 14 uses this app, it should be under parental supervision.</p>
+
+    <h2>6. Data Retention &amp; Deletion</h2>
+    <p>All locally stored data (favorites, alert settings) is permanently deleted when you uninstall the app. No user data is stored on developer servers.</p>
+
+    <h2>7. Accuracy of Exchange Rate Information</h2>
+    <p>Exchange rates provided by this app are for reference only and may differ from rates applied to actual currency exchange, remittance, or trading. The developer makes no warranties regarding the accuracy or completeness of the exchange rate information and is not liable for any losses arising from its use.</p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>This policy may be updated in accordance with applicable laws or service changes. Users will be notified via the app or store listing page.</p>
+
+    <h2>9. Contact</h2>
+    <div class="contact">
+      <p>Developer: binopp<br>
+      Email: <a href="mailto:binopp3852@gmail.com">binopp3852@gmail.com</a></p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showLang(lang) {
+    document.getElementById('ko').classList.toggle('hidden', lang !== 'ko');
+    document.getElementById('en').classList.toggle('hidden', lang !== 'en');
+    document.querySelectorAll('.lang-btn').forEach((btn, i) => {
+      btn.classList.toggle('active', (i === 0 && lang === 'ko') || (i === 1 && lang === 'en'));
+    });
+  }
+</script>
+</body>
+</html>
