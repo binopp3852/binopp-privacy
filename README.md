@@ -6,3 +6,4 @@ Hosted at: https://privacy.binopp.com
 - `/` → 앱 목록 인덱스
 - `/dark-tales/` → 어두운 이야기 - Dark Tales 개인정보처리방침
 - `/extrate/` → 환율 변환기 - Exchange Rate Converter 개인정보처리방침
+- `/kanji/` → 가나비 - 한자외우기 개인정보처리방침
